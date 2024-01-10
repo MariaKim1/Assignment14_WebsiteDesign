@@ -1,5 +1,44 @@
 @import 'normalize.css';
 @import 'colors';
+@import 'fonts';
+
+.container__grid {
+    display: grid;
+    grid-template-columns: repeat(35, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    }
+
+.header__image {
+    background-image: url('../images/back_img_header.jpg');
+}
 
 
+.footer {
+    background-color: $footer;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    &__h2{
+        font-family: $font-josefin;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 3.35px;
+    }
+
+    &__p {
+        font-family: $font-josefin;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 1.6px;
+    }
+
+    &__some-icons {
+       margin-right: 15px;
+    }
+}
