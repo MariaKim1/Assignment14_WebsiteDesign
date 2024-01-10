@@ -1,14 +1,68 @@
 @import 'normalize.css';
-.container__grid {
-  display: grid;
-  grid-template-columns: repeat(35, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(84, 116, 253);
+  color: rgb(255, 255, 255);
 }
-
-.header__image {
-  background-image: url("../images/back_img_header.jpg");
+.header__h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 4.8px;
+}
+.header__p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 6.82px;
+}
+.header__p2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 2.8px;
+}
+.header__search-container {
+  border: solid 2px rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+}
+.header__search-container input {
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+}
+.header__search-container input::-moz-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 2.8px;
+  color: rgb(153, 153, 153);
+}
+.header__search-container input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 2.8px;
+  color: rgb(153, 153, 153);
+}
+.header__search-btn {
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 1.4px;
+  text-align: center;
+  background-color: rgb(84, 116, 253);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: solid 2px rgb(255, 255, 255);
 }
 
 .footer {
@@ -34,4 +88,18 @@
 }
 .footer__some-icons {
   margin-right: 15px;
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+
+.container__grid {
+  display: grid;
+  grid-template-columns: repeat(35, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
 }/*# sourceMappingURL=index.css.map */
