@@ -1,21 +1,25 @@
-// .header__image {
-//     // background-image: url('../images/back_img_header.jpg');
-// }
+@import 'colors';
+@import 'fonts';
 
-.header {
+header {
+
+    background-image: url("../images/back_img_header.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $lightblue;
+    background-color: $gray-on-white;
     color: $white;
+}
 
-        &__h1 {
+.header {
+
+    &__h1 {
         font-family: $font-josefin;
         font-size: 48px;
         font-weight: 700;
         line-height: 26px;
         letter-spacing: 4.8px;
-        }
+    }
 
         &__p {
             font-family: $font-josefin;
@@ -66,13 +70,53 @@
             border: solid 2px $white;
         }
 
-        // &__scroll, &__scroll-icon {
-        //     // display: flex;
-        //     // // flex-direction: column;
-        //     // // align-items: center;
-        //     // background-color: $lightblue;
-        //     // color: $white;
-        // }
+        &__scroll, &__scroll-icon {
+            text-align: center;
+        }
 }
 
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: $lightblue;
+    align-items: center;
+}
+
+
+.header__h2 {
+    font-family: $font-josefin;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    color: $white;
+}
+
+.header__logolink {
+    text-decoration: none;
+}
+
+.header__navlist {
+        list-style-type: none;
+    }
+
+.header__navitem {
+    font-family: $font-aleo;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    margin-left: 20px;
+    color: $white;
+    text-decoration: none;
+}
+
+
+
+ul {
+    display: flex;
+
+}
 

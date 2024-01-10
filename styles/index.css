@@ -1,11 +1,12 @@
-@import 'normalize.css';
-.header {
+header {
+  background-image: url("../images/back_img_header.jpg");
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(84, 116, 253);
+  background-color: rgb(153, 153, 153);
   color: rgb(255, 255, 255);
 }
+
 .header__h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 48px;
@@ -64,6 +65,49 @@
   padding: 10px;
   border: solid 2px rgb(255, 255, 255);
 }
+.header__scroll, .header__scroll-icon {
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(84, 116, 253);
+  align-items: center;
+}
+
+.header__h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 2.4px;
+  color: rgb(255, 255, 255);
+}
+
+.header__logolink {
+  text-decoration: none;
+}
+
+.header__navlist {
+  list-style-type: none;
+}
+
+.header__navitem {
+  font-family: "Aleo", serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0px;
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+}
 
 .footer {
   background-color: rgb(35, 35, 35);
@@ -94,12 +138,4 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: auto;
-}
-
-.container__grid {
-  display: grid;
-  grid-template-columns: repeat(35, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
 }/*# sourceMappingURL=index.css.map */
