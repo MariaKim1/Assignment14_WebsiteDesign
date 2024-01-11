@@ -1,0 +1,64 @@
+@import 'colors';
+@import 'fonts';
+
+.section1 {
+    display: grid;
+    background-image: url("../images/back_img_section1.jpg");
+    grid-column: 1 / span 35; 
+
+}
+
+.card1 {
+    grid-column-start: 5;
+    grid-column-end: 15; 
+    grid-row-start: 3;
+
+    &__h3 {
+        font-family: $font-aleo;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: $white;
+
+    }
+    &__p {
+        font-family: $font-josefin;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 1.6px;
+        text-align: left;
+        color: $lightgrey;
+    }
+
+    &__btn {
+        font-family: $font-aleo;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 1.2px;
+        text-align: center;
+        background-color: $lightblue;
+        color: $white;
+        width: 228px;
+        height: 63px;
+        border: none;
+    }
+}
+
+.section1__img1 {
+    grid-column-start: 18; 
+    grid-column-end: 26;
+    grid-row-start: 2;
+
+}
+
+.section1__img2 {
+    grid-column-start: 20; 
+    grid-column-end: 25;
+    grid-row-start: 5;
+    margin-top: 10px;
+
+}

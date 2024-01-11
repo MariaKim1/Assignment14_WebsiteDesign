@@ -2,6 +2,12 @@
 @import 'fonts';
 @import 'header';
 @import 'footer';
+@import 'section1';
+@import 'section2';
+@import 'section3';
+@import 'section4';
+@import 'section5';
+
 
 body {
     max-width: 1440px;
@@ -9,12 +15,14 @@ body {
     margin: auto;
 }
 
-// .container__grid {
-//     display: grid;
-//     grid-template-columns: repeat(35, 1fr);
-//     grid-template-rows: repeat(6, 1fr);
-//     grid-column-gap: 2px;
-//     grid-row-gap: 2px;
-//     }
+/* ====== PARENT STYLING - Grid container ===== */
+/* ====== Cildren in separet section.scss-files ===== */
+.container__grid {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(10, 70px);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    }
 
 

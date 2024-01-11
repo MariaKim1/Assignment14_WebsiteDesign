@@ -1,0 +1,13 @@
+@import 'colors';
+@import 'fonts';
+
+.section2 {
+    background-color: $darkgray;
+    display: flex;
+    justify-content: space-around;
+    
+    &__icon {
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+}

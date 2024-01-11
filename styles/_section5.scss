@@ -1,0 +1,56 @@
+@import 'colors';
+@import 'fonts';
+
+
+.section5 {
+    display: grid;
+    grid-column: 1 / span 35; 
+    background-image: url("../images/back_img_section5.jpg");
+}
+
+.card5 {
+    grid-column-start: 16;
+    grid-column-end: 28; 
+    grid-row-start: 5;
+//  Can't get the backgroundcolor to show. I have tried card, .card, wrapping it in a div instead. It doesn't show.
+
+    &__img {
+        grid-column-start: 6;
+        grid-column-end: 16;
+        grid-row-start: 5;
+    }
+
+    &__h2 {
+        color: $lightgrey;
+        font-family: $font-josefin;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &__h3 {
+        color: $white;
+        font-family: $font-aleo;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+
+        grid-column-start: 11;
+        grid-column-end: 20;
+        grid-row-start: 2;
+    } 
+    
+    &__p {
+        color: $lightgrey;
+        font-family: $font-josefin;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+}
